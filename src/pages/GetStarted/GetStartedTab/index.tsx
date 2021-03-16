@@ -60,6 +60,8 @@ export class SamplesListTab extends React.PureComponent<Props, State> {
 
     if (this.state.temporary === undefined) {
       devfile = updateDevfile(devfile, this.props.preferredStorageType);
+    } else if (this.props.preferredStorageType === 'async') {
+      devfile = updateDevfile(devfile, this.state.temporary ? 'ephemeral' : this.props.preferredStorageType);
     } else {
       devfile = updateDevfile(devfile, this.state.temporary ? 'ephemeral' : 'persistent');
     }
