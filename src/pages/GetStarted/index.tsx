@@ -30,8 +30,6 @@ import * as WorkspaceStore from '../../store/Workspaces';
 import { AppState } from '../../store';
 import { AlertItem, GettingStartedTab } from '../../services/helpers/types';
 import { ROUTE } from '../../route.enum';
-import { selectPreferredStorageType } from '../../store/Workspaces/selectors';
-import { updateDevfile } from '../../services/storageTypes';
 
 const SamplesListTab = React.lazy(() => import('./GetStartedTab'));
 const CustomWorkspaceTab = React.lazy(() => import('./CustomWorkspaceTab'));
@@ -133,15 +131,7 @@ export class GetStarted extends React.PureComponent<Props, State> {
 
   private handleDevfileContent(devfileContent: string, attrs: { stackName?: string, infrastructureNamespace?: string }): Promise<void> {
     try {
-      let devfile = load(devfileContent);
-      if (
-        this.state.activeTabKey === 'get-started' &&
-        devfile?.attributes?.persistVolumes === undefined &&
-        devfile?.attributes?.asyncPersist === undefined &&
-        this.props.preferredStorageType
-      ) {
-        devfile = updateDevfile(devfile, this.props.preferredStorageType);
-      }
+      const devfile = load(devfileContent);
       return this.createWorkspace(devfile, attrs.stackName, attrs.infrastructureNamespace);
     } catch (e) {
       const errorMessage = 'Failed to parse the devfile';
@@ -216,7 +206,6 @@ export class GetStarted extends React.PureComponent<Props, State> {
 
 const mapStateToProps = (state: AppState) => ({
   branding: state.branding,
-  preferredStorageType: selectPreferredStorageType(state),
 });
 
 const connector = connect(
