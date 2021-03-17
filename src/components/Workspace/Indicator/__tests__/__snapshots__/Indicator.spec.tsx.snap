@@ -3,7 +3,11 @@
 exports[`Workspace indicator component should render ERROR status correctly 1`] = `
 <span
   data-testid="workspace-status-indicator"
+  data-tip="ERROR"
 >
+  <div>
+    Dummy Tooltip
+  </div>
   <svg
     aria-hidden={true}
     aria-labelledby={null}
@@ -29,7 +33,11 @@ exports[`Workspace indicator component should render ERROR status correctly 1`] 
 exports[`Workspace indicator component should render PAUSED status correctly 1`] = `
 <span
   data-testid="workspace-status-indicator"
+  data-tip="PAUSED"
 >
+  <div>
+    Dummy Tooltip
+  </div>
   <svg
     aria-hidden={true}
     aria-labelledby={null}
@@ -55,7 +63,11 @@ exports[`Workspace indicator component should render PAUSED status correctly 1`]
 exports[`Workspace indicator component should render RUNNING status correctly 1`] = `
 <span
   data-testid="workspace-status-indicator"
+  data-tip="RUNNING"
 >
+  <div>
+    Dummy Tooltip
+  </div>
   <svg
     aria-hidden={true}
     aria-labelledby={null}
@@ -81,7 +93,11 @@ exports[`Workspace indicator component should render RUNNING status correctly 1`
 exports[`Workspace indicator component should render STARTING status correctly 1`] = `
 <span
   data-testid="workspace-status-indicator"
+  data-tip="STARTING"
 >
+  <div>
+    Dummy Tooltip
+  </div>
   <svg
     aria-hidden={true}
     aria-labelledby={null}
@@ -107,7 +123,11 @@ exports[`Workspace indicator component should render STARTING status correctly 1
 exports[`Workspace indicator component should render STOPPED status correctly 1`] = `
 <span
   data-testid="workspace-status-indicator"
+  data-tip="STOPPED"
 >
+  <div>
+    Dummy Tooltip
+  </div>
   <svg
     aria-hidden="true"
     fill="grey"
@@ -138,11 +158,15 @@ exports[`Workspace indicator component should render STOPPED status correctly 1`
 exports[`Workspace indicator component should render STOPPING status correctly 1`] = `
 <span
   data-testid="workspace-status-indicator"
+  data-tip="STOPPING"
 >
+  <div>
+    Dummy Tooltip
+  </div>
   <svg
     aria-hidden={true}
     aria-labelledby={null}
-    fill="#0e6fe0"
+    fill="grey"
     height="1em"
     role="img"
     style={

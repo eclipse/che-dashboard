@@ -26,6 +26,7 @@ exports[`The header component for IDE-loader and Factory-loader pages should ren
     >
       <span
         className="pf-c-label pf-m-blue"
+        data-tip="STARTING"
       >
         <span
           className="pf-c-label__content"
@@ -53,6 +54,9 @@ exports[`The header component for IDE-loader and Factory-loader pages should ren
               />
             </svg>
           </span>
+          <div>
+            Dummy Tooltip
+          </div>
           Starting
         </span>
       </span>
@@ -87,6 +91,7 @@ exports[`The header component for IDE-loader and Factory-loader pages should ren
     >
       <span
         className="pf-c-label pf-m-red"
+        data-tip="ERROR"
       >
         <span
           className="pf-c-label__content"
@@ -114,6 +119,9 @@ exports[`The header component for IDE-loader and Factory-loader pages should ren
               />
             </svg>
           </span>
+          <div>
+            Dummy Tooltip
+          </div>
           Error
         </span>
       </span>

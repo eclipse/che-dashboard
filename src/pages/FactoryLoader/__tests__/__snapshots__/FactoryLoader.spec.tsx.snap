@@ -27,6 +27,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-blue"
+          data-tip="STARTING"
         >
           <span
             className="pf-c-label__content"
@@ -54,6 +55,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Starting
           </span>
         </span>
@@ -599,6 +603,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-red"
+          data-tip="ERROR"
         >
           <span
             className="pf-c-label__content"
@@ -626,6 +631,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Error
           </span>
         </span>
@@ -1171,6 +1179,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-blue"
+          data-tip="STARTING"
         >
           <span
             className="pf-c-label__content"
@@ -1198,6 +1207,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Starting
           </span>
         </span>
@@ -1638,6 +1650,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-red"
+          data-tip="ERROR"
         >
           <span
             className="pf-c-label__content"
@@ -1665,6 +1678,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Error
           </span>
         </span>
@@ -2105,6 +2121,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-red"
+          data-tip="ERROR"
         >
           <span
             className="pf-c-label__content"
@@ -2132,6 +2149,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Error
           </span>
         </span>
@@ -2658,6 +2678,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-blue"
+          data-tip="STARTING"
         >
           <span
             className="pf-c-label__content"
@@ -2685,6 +2706,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Starting
           </span>
         </span>
@@ -3211,6 +3235,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-blue"
+          data-tip="STARTING"
         >
           <span
             className="pf-c-label__content"
@@ -3238,6 +3263,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Starting
           </span>
         </span>
@@ -3764,6 +3792,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-blue"
+          data-tip="STARTING"
         >
           <span
             className="pf-c-label__content"
@@ -3791,6 +3820,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Starting
           </span>
         </span>
@@ -4326,6 +4358,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-blue"
+          data-tip="STARTING"
         >
           <span
             className="pf-c-label__content"
@@ -4353,6 +4386,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Starting
           </span>
         </span>
@@ -4869,6 +4905,7 @@ Array [
       >
         <span
           className="pf-c-label pf-m-red"
+          data-tip="ERROR"
         >
           <span
             className="pf-c-label__content"
@@ -4896,6 +4933,9 @@ Array [
                 />
               </svg>
             </span>
+            <div>
+              Dummy Tooltip
+            </div>
             Error
           </span>
         </span>

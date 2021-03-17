@@ -19,6 +19,7 @@ import {
 import React from 'react';
 import { Label } from '@patternfly/react-core';
 import { WorkspaceStatus } from '../../services/helpers/types';
+import ReactTooltip from 'react-tooltip';
 
 import styles from './index.module.css';
 
@@ -63,10 +64,11 @@ class WorkspaceStatusLabel extends React.PureComponent<Props> {
         color = 'grey';
         return (
           <Label
+            data-tip={`${status}`}
             className={`${styles.statusLabel} ${styles.stoppedLabel}`}
             color={color}
             icon={<StoppedIcon />}
-          >
+          ><ReactTooltip />
             Stopped
           </Label>
         );
@@ -74,10 +76,11 @@ class WorkspaceStatusLabel extends React.PureComponent<Props> {
         color = 'green';
         return (
           <Label
+            data-tip={`${status}`}
             className={styles.statusLabel}
             color={color}
             icon={<ResourcesFullIcon />}
-          >
+          ><ReactTooltip />
             Running
           </Label>
         );
@@ -85,10 +88,11 @@ class WorkspaceStatusLabel extends React.PureComponent<Props> {
         color = 'red';
         return (
           <Label
+            data-tip={`${status}`}
             className={styles.statusLabel}
             color={color}
             icon={<ExclamationCircleIcon />}
-          >
+          ><ReactTooltip />
             Error
           </Label>
         );
@@ -96,22 +100,36 @@ class WorkspaceStatusLabel extends React.PureComponent<Props> {
         color = 'orange';
         return (
           <Label
+            data-tip={`${status}`}
             className={styles.statusLabel}
             color={color}
             icon={<PauseCircleIcon />}
-          >
+          ><ReactTooltip />
             Paused
           </Label>
         );
-      default:
+      case WorkspaceStatus[WorkspaceStatus.STARTING]:
         color = 'blue';
         return (
           <Label
+            data-tip={`${status}`}
             className={styles.statusLabel}
             color={color}
             icon={<InProgressIcon className={styles.rotate} />}
-          >
-            {!status || status === WorkspaceStatus[WorkspaceStatus.STARTING] ? 'Starting' : status.toLocaleLowerCase()}
+          ><ReactTooltip />
+            Starting
+          </Label>
+        );
+      default:
+        color = 'grey';
+        return (
+          <Label
+            data-tip={`${status}`}
+            className={styles.statusLabel}
+            color={color}
+            icon={<InProgressIcon className={styles.rotate} />}
+          ><ReactTooltip />
+            {`${status}`.toLocaleLowerCase()}
           </Label>
         );
     }

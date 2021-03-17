@@ -21,6 +21,7 @@ import { WorkspaceStatus } from '../../../services/helpers/types';
 import { ColorType, StoppedIcon } from '../../WorkspaceStatusLabel';
 
 import styles from './index.module.css';
+import ReactTooltip from 'react-tooltip';
 
 type Props = {
   status: string;
@@ -50,16 +51,21 @@ class WorkspaceIndicator extends React.PureComponent<Props> {
         color = 'orange';
         icon = <PauseCircleIcon color={color} />;
         break;
-      default:
+      case WorkspaceStatus[WorkspaceStatus.STARTING]:
         color = '#0e6fe0';
+        icon = <InProgressIcon className={styles.rotate} color={color} />;
+        break;
+      default:
+        color = 'grey';
         icon = <InProgressIcon className={styles.rotate} color={color} />;
     }
 
     return (
       <span
+        data-tip={`${status}`}
         className={styles.statusIndicator}
         data-testid="workspace-status-indicator"
-      >
+      ><ReactTooltip />
         {icon}
       </span>
     );
