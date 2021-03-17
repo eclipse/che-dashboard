@@ -301,7 +301,7 @@
 | [`underscore@1.12.0`](git://github.com/jashkenas/underscore.git) | MIT | clearlydefined |
 | [`uri-js@4.2.2`](http://github.com/garycourt/uri-js) | BSD-2-Clause | [CQ18717](https://dev.eclipse.org/ipzilla/show_bug.cgi?id=18717) |
 | [`url-parse@1.4.7`](https://github.com/unshiftio/url-parse.git) | MIT | clearlydefined |
-| [`uuid@7.0.3`](https://github.com/uuidjs/uuid.git) | MIT |  |
+| [`uuid@3.4.0`](https://github.com/uuidjs/uuid.git) | MIT | clearlydefined |
 | [`value-equal@1.0.1`](https://github.com/mjackson/value-equal.git) | MIT | clearlydefined |
 | [`verror@1.10.0`](git://github.com/davepacheco/node-verror.git) | MIT | [CQ16925](https://dev.eclipse.org/ipzilla/show_bug.cgi?id=16925) |
 | [`vscode-json-languageservice@3.10.0`](https://github.com/Microsoft/vscode-json-languageservice) | MIT | clearlydefined |
