@@ -25,6 +25,9 @@ Array [
       <div
         className=""
       >
+        <div>
+          Dummy Tooltip
+        </div>
         <span
           className="pf-c-label undefined undefined"
           data-tip="STOPPED"
@@ -60,9 +63,6 @@ Array [
                 />
               </svg>
             </span>
-            <div>
-              Dummy Tooltip
-            </div>
             Stopped
           </span>
         </span>
@@ -443,6 +443,9 @@ Array [
       <div
         className=""
       >
+        <div>
+          Dummy Tooltip
+        </div>
         <span
           className="pf-c-label pf-m-red"
           data-tip="ERROR"
@@ -473,9 +476,6 @@ Array [
                 />
               </svg>
             </span>
-            <div>
-              Dummy Tooltip
-            </div>
             Error
           </span>
         </span>
@@ -903,6 +903,9 @@ Array [
       <div
         className=""
       >
+        <div>
+          Dummy Tooltip
+        </div>
         <span
           className="pf-c-label pf-m-green"
           data-tip="RUNNING"
@@ -933,9 +936,6 @@ Array [
                 />
               </svg>
             </span>
-            <div>
-              Dummy Tooltip
-            </div>
             Running
           </span>
         </span>
@@ -1401,6 +1401,9 @@ Array [
       <div
         className=""
       >
+        <div>
+          Dummy Tooltip
+        </div>
         <span
           className="pf-c-label pf-m-red"
           data-tip="ERROR"
@@ -1431,9 +1434,6 @@ Array [
                 />
               </svg>
             </span>
-            <div>
-              Dummy Tooltip
-            </div>
             Error
           </span>
         </span>
@@ -1864,6 +1864,9 @@ Array [
       <div
         className=""
       >
+        <div>
+          Dummy Tooltip
+        </div>
         <span
           className="pf-c-label pf-m-blue"
           data-tip="STARTING"
@@ -1894,9 +1897,6 @@ Array [
                 />
               </svg>
             </span>
-            <div>
-              Dummy Tooltip
-            </div>
             Starting
           </span>
         </span>
@@ -2343,6 +2343,9 @@ Array [
       <div
         className=""
       >
+        <div>
+          Dummy Tooltip
+        </div>
         <span
           className="pf-c-label pf-m-red"
           data-tip="ERROR"
@@ -2373,9 +2376,6 @@ Array [
                 />
               </svg>
             </span>
-            <div>
-              Dummy Tooltip
-            </div>
             Error
           </span>
         </span>

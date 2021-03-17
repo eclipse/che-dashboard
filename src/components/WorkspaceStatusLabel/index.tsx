@@ -63,74 +63,80 @@ class WorkspaceStatusLabel extends React.PureComponent<Props> {
       case WorkspaceStatus[WorkspaceStatus.STOPPED]:
         color = 'grey';
         return (
-          <Label
-            data-tip={`${status}`}
-            className={`${styles.statusLabel} ${styles.stoppedLabel}`}
-            color={color}
-            icon={<StoppedIcon />}
-          ><ReactTooltip />
-            Stopped
-          </Label>
+          <React.Fragment>
+            <ReactTooltip backgroundColor="black" textColor="white" />
+            <Label
+              data-tip={`${status}`}
+              className={`${styles.statusLabel} ${styles.stoppedLabel}`}
+              color={color}
+              icon={<StoppedIcon />}
+            >Stopped</Label>
+          </React.Fragment>
         );
       case WorkspaceStatus[WorkspaceStatus.RUNNING]:
         color = 'green';
         return (
-          <Label
-            data-tip={`${status}`}
-            className={styles.statusLabel}
-            color={color}
-            icon={<ResourcesFullIcon />}
-          ><ReactTooltip />
-            Running
-          </Label>
+          <React.Fragment>
+            <ReactTooltip backgroundColor="black" textColor="white" />
+            <Label
+              data-tip={`${status}`}
+              className={styles.statusLabel}
+              color={color}
+              icon={<ResourcesFullIcon />}
+            >Running</Label>
+          </React.Fragment>
         );
       case WorkspaceStatus[WorkspaceStatus.ERROR]:
         color = 'red';
         return (
-          <Label
-            data-tip={`${status}`}
-            className={styles.statusLabel}
-            color={color}
-            icon={<ExclamationCircleIcon />}
-          ><ReactTooltip />
-            Error
-          </Label>
+          <React.Fragment>
+            <ReactTooltip backgroundColor="black" textColor="white" />
+            <Label
+              data-tip={`${status}`}
+              className={styles.statusLabel}
+              color={color}
+              icon={<ExclamationCircleIcon />}
+            >Error</Label>
+          </React.Fragment>
         );
       case WorkspaceStatus[WorkspaceStatus.PAUSED]:
         color = 'orange';
         return (
-          <Label
-            data-tip={`${status}`}
-            className={styles.statusLabel}
-            color={color}
-            icon={<PauseCircleIcon />}
-          ><ReactTooltip />
-            Paused
-          </Label>
+          <React.Fragment>
+            <ReactTooltip backgroundColor="black" textColor="white" />
+            <Label
+              data-tip={`${status}`}
+              className={styles.statusLabel}
+              color={color}
+              icon={<PauseCircleIcon />}
+            >Paused</Label>
+          </React.Fragment>
         );
       case WorkspaceStatus[WorkspaceStatus.STARTING]:
         color = 'blue';
         return (
-          <Label
-            data-tip={`${status}`}
-            className={styles.statusLabel}
-            color={color}
-            icon={<InProgressIcon className={styles.rotate} />}
-          ><ReactTooltip />
-            Starting
-          </Label>
+          <React.Fragment>
+            <ReactTooltip backgroundColor="black" textColor="white" />
+            <Label
+              data-tip={`${status}`}
+              className={styles.statusLabel}
+              color={color}
+              icon={<InProgressIcon className={styles.rotate} />}
+            >Starting</Label>
+          </React.Fragment>
         );
       default:
         color = 'grey';
         return (
-          <Label
-            data-tip={`${status}`}
-            className={styles.statusLabel}
-            color={color}
-            icon={<InProgressIcon className={styles.rotate} />}
-          ><ReactTooltip />
-            {`${status}`.toLocaleLowerCase()}
-          </Label>
+          <React.Fragment>
+            <ReactTooltip backgroundColor="black" textColor="white" />
+            <Label
+              data-tip={`${status}`}
+              className={styles.statusLabel}
+              color={color}
+              icon={<InProgressIcon className={styles.rotate} />}
+            >{`${status}`.toLocaleLowerCase()}</Label>
+          </React.Fragment>
         );
     }
   }

@@ -61,13 +61,14 @@ class WorkspaceIndicator extends React.PureComponent<Props> {
     }
 
     return (
-      <span
-        data-tip={`${status}`}
-        className={styles.statusIndicator}
-        data-testid="workspace-status-indicator"
-      ><ReactTooltip />
-        {icon}
-      </span>
+      <React.Fragment>
+        <ReactTooltip backgroundColor="black" textColor="white" />
+        <span
+          data-tip={`${status}`}
+          className={styles.statusIndicator}
+          data-testid="workspace-status-indicator"
+        >{icon}</span>
+      </React.Fragment>
     );
   }
 }
